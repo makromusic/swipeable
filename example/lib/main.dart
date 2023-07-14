@@ -24,8 +24,8 @@ class SwipeableDemo extends StatefulWidget {
 }
 
 class SwipeableDemoState extends State<SwipeableDemo> {
-  bool leftSelected;
-  bool rightSelected;
+  late bool leftSelected;
+  late bool rightSelected;
 
   void initState() {
     leftSelected = false;
@@ -70,7 +70,7 @@ class SwipeableDemoState extends State<SwipeableDemo> {
                   title: Text(text),
                 ),
               ),
-              background: Container(
+              backgroundWidget: Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(
                       Radius.circular(8.0),

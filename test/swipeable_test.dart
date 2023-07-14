@@ -39,7 +39,7 @@ class _TestAppState extends State<TestApp> {
             width: 200,
             height: 200,
             child: Swipeable(
-              background: Container(
+              backgroundWidget: Container(
                 color: Colors.blue,
               ),
               child: Container(
